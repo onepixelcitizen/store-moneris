@@ -2,8 +2,6 @@
 
 namespace Omnipay\Moneris\Message;
 
-use Omnipay\Moneris\Gateway;
-
 /**
  * Moneris Abstract Request
  */

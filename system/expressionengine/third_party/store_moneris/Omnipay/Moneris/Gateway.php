@@ -3,8 +3,6 @@
 namespace Omnipay\Moneris;
 
 use Omnipay\Common\AbstractGateway;
-use Omnipay\Moneris\Message\PurchaseRequest;
-use Omnipay\Moneris\Message\CompletePurchaseRequest;
 
 
 class Gateway extends AbstractGateway

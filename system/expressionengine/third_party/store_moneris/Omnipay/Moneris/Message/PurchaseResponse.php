@@ -4,7 +4,6 @@ namespace Omnipay\Moneris\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
-use Omnipay\Moneris\Gateway;
 
 /**
  * Moneris Purchase Response
@@ -28,11 +27,11 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
 
     public function getRedirectMethod()
     {
-        return 'GET';
+        return 'POST';
     }
 
     public function getRedirectData()
     {
-        return null;
+        return $this->data;
     }
 }

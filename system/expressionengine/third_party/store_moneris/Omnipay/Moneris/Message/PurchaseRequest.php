@@ -1,6 +1,7 @@
 <?php
 
 namespace Omnipay\Moneris\Message;
+
 /**
  * Moneris Purchase Request
  */
@@ -23,6 +24,11 @@ class PurchaseRequest extends AbstractRequest
             $data['avs_street_number'] = $this->getCard()->getAddress1();
             $data['avs_street_name'] = $this->getCard()->getAddress2();
             $data['avs_zipcode'] = $this->getCard()->getPostcode();
+            // $data['city'] = $this->getCard()->getCity();
+            // $data['state'] = $this->getCard()->getState();
+            // $data['country'] = $this->getCard()->getCountry();
+            // $data['phone'] = $this->getCard()->getPhone();
+            // $data['email'] = $this->getCard()->getEmail();
         }
 
         return $data;
